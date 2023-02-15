@@ -8,6 +8,16 @@ module Enumerable
 
     self
   end
+
+  def my_select
+    selected = []
+
+    for element in self do
+      selected << element if yield(element) == true
+    end
+
+    selected
+  end
 end
 
 # You will first have to define my_each
