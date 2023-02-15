@@ -1,5 +1,13 @@
 module Enumerable
+  def my_each_with_index
+    index = 0
+    while index <= size - 1
+      yield(self[index], index)
+      index += 1
+    end
 
+    self
+  end
 end
 
 # You will first have to define my_each
