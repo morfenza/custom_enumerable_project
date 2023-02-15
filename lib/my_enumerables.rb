@@ -23,7 +23,7 @@ module Enumerable
     criteria = true
 
     for element in self do
-      criteria = yield(element)
+      criteria = false unless yield(element)
     end
 
     criteria
@@ -34,6 +34,16 @@ module Enumerable
 
     for element in self do
       criteria = true if yield(element)
+    end
+
+    criteria
+  end
+
+  def my_none?
+    criteria = true
+
+    for element in self
+      criteria = false if yield(element)
     end
 
     criteria
