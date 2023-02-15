@@ -18,6 +18,18 @@ module Enumerable
 
     selected
   end
+
+  def my_all?
+    criteria = true
+
+    for element in self do
+      criteria = yield(element)
+    end
+
+    criteria
+  end
+
+  
 end
 
 # You will first have to define my_each
