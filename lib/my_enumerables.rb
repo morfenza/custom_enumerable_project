@@ -60,6 +60,16 @@ module Enumerable
 
     count
   end
+
+  def my_map
+    mapped = []
+
+    for element in self do
+      mapped << yield(element)
+    end
+
+    mapped
+  end
 end
 
 # You will first have to define my_each
