@@ -29,7 +29,15 @@ module Enumerable
     criteria
   end
 
-  
+  def my_any?
+    criteria = false
+
+    for element in self do
+      criteria = true if yield(element)
+    end
+
+    criteria
+  end
 end
 
 # You will first have to define my_each
