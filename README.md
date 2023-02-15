@@ -1,6 +1,6 @@
 # Custom Enumerable Project
 
-This repository complements the [Custom Enumerables Project](https://www.theodinproject.com/lessons/ruby-custom-enumerables) in the Ruby Course for The Odin Project. The goal of this project is to reimplement common methods used frequently through the enumerables module with objects like arrays and hashes. This project helped to familiarize me how to work with blocks and procs.
+This repository complements the [Custom Enumerables Project](https://www.theodinproject.com/lessons/ruby-custom-enumerables) in the Ruby Course for The Odin Project. The goal of this project is to reimplement common methods used frequently through the enumerables module with objects like arrays and hashes. This project helped to familiarize me on how to work with blocks and procs.
 
 ### Local testing
 
