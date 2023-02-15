@@ -70,6 +70,14 @@ module Enumerable
 
     mapped
   end
+
+  def my_inject(acc = self[0])
+    for element in self do
+      acc = yield(acc, element)
+    end
+
+    acc
+  end
 end
 
 # You will first have to define my_each
